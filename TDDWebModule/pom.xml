@@ -109,6 +109,7 @@
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -193,27 +194,6 @@
 				</executions>
 				<configuration>
 					<packageName>com.tdd.jsp</packageName>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>com.github.searls</groupId>
-				<artifactId>jasmine-maven-plugin</artifactId>
-				<version>${maven-jasmine-plugin.version}</version>
-				<executions>
-					<execution>
-						<id>jasmine</id>
-						<goals>
-							<goal>test</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<jsSrcDir>${project.basedir}/src/main/webapp/js</jsSrcDir>
-					<jsTestSrcDir>${project.basedir}/src/test/jasmine</jsTestSrcDir>
-					<preloadSources>
-						<source>https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js</source>
-						<source>https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js</source>
-					</preloadSources>
 				</configuration>
 			</plugin>
 			<plugin>

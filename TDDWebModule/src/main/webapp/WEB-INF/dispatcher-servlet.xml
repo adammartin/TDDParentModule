@@ -35,6 +35,5 @@
 			value="org.springframework.web.servlet.view.tiles2.SpringBeanPreparerFactory" />
 	</bean>
 
-	<context:component-scan base-package="com.tdd.preparer" />
 	<context:component-scan base-package="com.tdd.controller" />
 </beans>    
